@@ -1,0 +1,69 @@
+/* Code Challenge 1: Pull descriptive statistics with a CTE
+--------------------------------------------------------------------------
+Calculating Descriptive statitics for monthly revenue by product
+--------------------------------------------------------------------------
+
+Business Problem: 
+The leadership team at your company is making goals for 2023 and wants to understand how much revenue each of the product subscriptions, basic and expert , are generating each month. 
+More specifically, they want to understand the distribution of monthly revenue across the past year, 2022.
+
+They asked the following questions:
+	Q1: How much revenue does each product usually generate each month?
+	Q2: Which product had the most success throughout all of last year?
+	Q3: Did either product fluctuate greatly each month or was the month-to-month trend fairly consistent?
+
+As the meeting is next day, I decided that a granular report of monthly revenue by product probably isn't the best deliverable
+Instead of large table of numbers, I decided to calculate more high level: 
+	the minimum, maximum, average and standard deviation of monthly revenue for each product for year 2022.
+This provides quick summary of revenue and consistency that each product provided last year.
+
+
+*/
+
+
+WITH CTE_monthlyrevenue AS
+(
+    SELECT 
+        date_trunc('month',orderdate) AS ordermonth,
+        --orderdate,
+        p.productname,
+        SUM(revenue) AS revenue
+    FROM subscriptions s
+JOIN products p ON s.productid=p.productid
+    WHERE orderdate between '2022-01-01' AND '2022-12-31'
+    GROUP BY
+        date_trunc('month',orderdate),
+        p.productname
+)
+
+SELECT
+    productname,
+    MIN(revenue) AS min_rev,
+    MAX(revenue) AS max_rev,
+    AVG(revenue) AS avg_rev,
+    STDDEV(revenue)AS std_dev_rev
+FROM CTE_monthlyrevenue
+GROUP BY 
+    productname;
+ 
+
+ /*
+
+ OUTPUT:
+ ------------------------------------------------------------------
+| PRODUCTNAME | MIN_REV | MAX_REV | AVG_REV | STD_DEV_REV        |
+------------------------------------------------------------------
+| Basic       | 500     | 28000   | 13188   | 8123.763642197237  |
+| Expert      | 3000    | 46000   | 18000   | 13796.134724383252 |
+------------------------------------------------------------------
+
+Analysis:
+
+1. The Expert product had a much higher average monthly revenue than the Basic product. 
+	This is likely because the Expert product costs more money due to having more features. 
+
+2. The Expert product had a larger standard deviation. 
+	This means that the Expert monthly revenues had more variability, whereas the Basic monthly revenues were more centered around the mean. 
+	So although the Expert product produced more revenue on average, the Basic product was a little more consistent across the months. 
+
+*/
