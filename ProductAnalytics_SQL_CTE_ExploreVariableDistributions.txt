@@ -1,0 +1,57 @@
+/*Code Challenge 2: Explore variable distributions with CTEs
+
+Business Problem: 
+The marketing team manager at our company approached me seeking insights into the performance of their recent email campaign. 
+With the campaign already launched, the manager is specifically interested in understanding the number of users who clicked the link embedded in the email.
+
+During the project planning phase, collaboration with front-end engineers led to the creation of tracking events recorded in the "frontendeventlog" table. 
+Notably, an event with "eventid=5" is logged when a user accesses a unique landing page exclusively linked to this campaign email. 
+Tracking occurrences of "eventid=5" serves as the optimal method for quantifying the users who clicked the link in the campaign email.
+
+In this scenario, and overall aggregate metric like an average can hide outliers and further insights. 
+Therefore, a more nuanced approach involves calculating the distribution of the number of clicks per user. 
+This means understanding how many users clicked the email link once, twice, thrice, and so forth.
+
+It's crucial to note that the "frontendeventlog" table exclusively captures events that actually occur. 
+Consequently, counting users who received the email but refrained from clicking the link necessitates additional data sources. 
+For the sake of simplicity, I focused on analyzing data only for those users who actively clicked on the link, acknowledging that non-clickers were not factored into the analysis.
+
+
+*/
+--Number of email link clicks per user
+WITH CTE_email_link_click AS
+(
+    SELECT 
+    userid,
+	--to count the number of instances per user
+    COUNT(*)as num_link_clicks
+FROM frontendeventlog
+WHERE eventid=5
+    GROUP BY userid
+)
+
+SELECT 
+    num_link_clicks,
+    COUNT(num_link_clicks)AS num_users  
+FROM  CTE_email_link_click
+    GROUP BY num_link_clicks
+    
+
+
+/*
+OUTPUT:
+| NUM_LINK_CLICKS | NUM_USERS |
+-------------------------------
+| 1               | 3         |
+| 2               | 2         |
+| 3               | 1         |
+-------------------------------
+
+Analysis:
+ This leads to the distribution of the "num link clicks" variable, allowing us to observe the frequency of users clicking the email link. 
+ For instance, the data reveals that three users clicked the link once, two users clicked it twice, and one user clicked it three times. 
+ Interestingly, it appears that approximately half of the engaged users revisit the email to click the link multiple times, be it twice or even three times. 
+ These insights carry significant importance for the marketing team, providing valuable understanding of user interactions with the email link.
+
+*/
+
