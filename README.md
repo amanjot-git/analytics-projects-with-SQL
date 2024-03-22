@@ -13,6 +13,7 @@ Solving Real World Data Problems with SQL
    and considering the timeframe and product subscriptions
 
    The project aims to calculate the all-time average number of registered users per customer.
+
    The results will be presented in a concise and visually appealing manner, empowering the leadership team with valuable information to make informed decisions and enhance the impact of the upcoming board presentation.
 
 3. **Analyzing User Engagement in Recent Email Campaign**
@@ -28,4 +29,5 @@ Solving Real World Data Problems with SQL
    analyzing the distribution of user engagement
 
    The project aims to uncover insights into user behavior. Visualizations will be created to effectively communicate these insights, and recommendations will be provided to optimize future email campaigns.
+
    The analysis is documented for transparency and shared through a concise presentation, empowering the marketing team with actionable information for strategic decision-making and campaign enhancement.
