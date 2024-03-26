@@ -4,10 +4,10 @@ Solving Real World Data Problems with SQL
 
    It focuses on providing in-depth insights into the number of registered users per customer in anticipation of an upcoming board meeting.
 
-   Steps to follow:
+   Steps to follow:```
     - Collecting and ensuring the integrity of relevant datasets,
     - Defining key metrics, 
-    - Considering the timeframe and product subscriptions
+    - Considering the timeframe and product subscriptions```
 
    The project aims to calculate the all-time average number of registered users per customer. ``` ```
 
