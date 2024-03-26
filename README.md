@@ -3,7 +3,7 @@ Solving Real World Data Problems with SQL
 1. **Analyzing Registered User Data**
 
    It focuses on providing in-depth insights into the number of registered users per customer in anticipation of an upcoming board meeting.
-```
+   ```
    Steps:
    - Collecting and ensuring the integrity of relevant datasets,
    - Defining key metrics, 
@@ -17,9 +17,8 @@ Solving Real World Data Problems with SQL
 3. **Analyzing User Engagement in Recent Email Campaign**
 
    It focuses on a comprehensive examination of the recent email campaign's performance.
-
-   Steps:
    ```
+   Steps:
    - Collecting and ensuring the integrity of relevant datasets,
    - Identifying tracking events for link clicks, and
    - Analyzing the distribution of user engagement
