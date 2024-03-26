@@ -10,7 +10,7 @@ Solving Real World Data Problems with SQL
    - Considering the timeframe and product subscriptions
    ```
 
-   The project aims to calculate the all-time average number of registered users per customer. ``` ```
+   The project aims to calculate the all-time average number of registered users per customer.
 
    The results will be presented in a concise and visually appealing manner, empowering the leadership team with valuable information to make informed decisions and enhance the impact of the upcoming board presentation.
 
