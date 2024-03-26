@@ -5,9 +5,10 @@ Solving Real World Data Problems with SQL
    It focuses on providing in-depth insights into the number of registered users per customer in anticipation of an upcoming board meeting.
 
    Steps:
-   ```- Collecting and ensuring the integrity of relevant datasets,
-    - Defining key metrics, 
-    - Considering the timeframe and product subscriptions
+   ```
+   - Collecting and ensuring the integrity of relevant datasets,
+   - Defining key metrics, 
+   - Considering the timeframe and product subscriptions
    ```
 
    The project aims to calculate the all-time average number of registered users per customer. ``` ```
@@ -19,7 +20,8 @@ Solving Real World Data Problems with SQL
    It focuses on a comprehensive examination of the recent email campaign's performance.
 
    Steps:
-   ```- Collecting and ensuring the integrity of relevant datasets,
+   ```
+   - Collecting and ensuring the integrity of relevant datasets,
    - Identifying tracking events for link clicks, and
    - Analyzing the distribution of user engagement
    ```
