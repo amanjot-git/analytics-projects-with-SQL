@@ -4,9 +4,8 @@ Solving Real World Data Problems with SQL
 
    It focuses on providing in-depth insights into the number of registered users per customer in anticipation of an upcoming board meeting.
 
-   Steps to follow:
-   ```
-    - Collecting and ensuring the integrity of relevant datasets,
+   Steps:
+   ```- Collecting and ensuring the integrity of relevant datasets,
     - Defining key metrics, 
     - Considering the timeframe and product subscriptions
    ```
@@ -19,11 +18,11 @@ Solving Real World Data Problems with SQL
 
    It focuses on a comprehensive examination of the recent email campaign's performance.
 
-   Steps to follow:
-   - Collecting and ensuring the integrity of relevant datasets,
+   Steps:
+   ```- Collecting and ensuring the integrity of relevant datasets,
    - Identifying tracking events for link clicks, and
    - Analyzing the distribution of user engagement
-
+   ```
    The project aims to uncover insights into user behavior. Visualizations will be created to effectively communicate these insights, and recommendations will be provided to optimize future email campaigns.
 
    The analysis is documented for transparency and shared through a concise presentation, empowering the marketing team with actionable information for strategic decision-making and campaign enhancement.
