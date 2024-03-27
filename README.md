@@ -36,8 +36,8 @@ Solving Real World Data Problems with SQL
    ```
    Steps:
    - Collecting pertinent data and ensuring its accuracy
-   - Working on finding the furthest point user reached in payment process
-   - If error occurs, differentiate between user error and vendor error
+   - Finding the furthest point user reached in payment process
+   - If an error occurs, differentiate between user error and vendor error
    ```
    
    The project aims to provide insights into user behavior at each stage of the payment funnel. 
