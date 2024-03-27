@@ -15,7 +15,7 @@ Solving Real World Data Problems with SQL
 
    The results will be presented in a concise and visually appealing manner, empowering the leadership team with valuable information to make informed decisions and enhance the impact of the upcoming board presentation.
 
-**2. Analyzing User Engagement in Recent Email Campaign**
+**2. [Analyzing User Engagement in Recent Email Campaign](https://github.com/amanjot-git/RealWorldDataChallenges/blob/main/ProductAnalytics_SQL_CTE_ExploreVariableDistributions.txt)**
 
    It focuses on a comprehensive examination of the recent email campaign's performance.
    ```
