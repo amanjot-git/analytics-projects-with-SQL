@@ -7,9 +7,9 @@ Solving Real World Data Problems with SQL
     
    ```
    Steps:
-    - Collecting and ensuring the integrity of relevant datasets,
-    - Defining key metrics, 
-    - Considering the timeframe and product subscriptions
+   - Collecting and ensuring the integrity of relevant datasets,
+   - Defining key metrics, 
+   - Considering the timeframe and product subscriptions
    ```
    
     The project aims to calculate the all-time average number of registered users per customer.
