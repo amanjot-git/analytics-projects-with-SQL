@@ -2,6 +2,7 @@
 Solving Real World Data Problems with SQL
 
 **1. [Analyzing Registered User Data](https://github.com/amanjot-git/RealWorldDataChallenges/blob/main/ProductAnalytics_SQL_CTE_DescriptiveStatistics.txt)**
+    
     It focuses on providing in-depth insights into the number of registered users per customer in anticipation of an upcoming board meeting.
     ```
     Steps:
