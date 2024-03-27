@@ -24,6 +24,7 @@ Solving Real World Data Problems with SQL
    - Identifying tracking events for link clicks, and
    - Analyzing the distribution of user engagement
    ```
+   
    The project aims to uncover insights into user behavior. Visualizations will be created to effectively communicate these insights, and recommendations will be provided to optimize future email campaigns.
 
    The analysis is documented for transparency and shared through a concise presentation, empowering the marketing team with actionable information for strategic decision-making and campaign enhancement.
@@ -33,9 +34,14 @@ Solving Real World Data Problems with SQL
 
    It delves into understanding the payment process's efficiency and identifying potential bottlenecks in the user journey. 
    ```
-   Collecting pertinent data and ensuring its accuracy
+   Steps:
+   - Collecting pertinent data and ensuring its accuracy
+   - Working on finding the furthest point user reached in payment process
+   - If error occurs, differentiate between user error and vendor error
    ```
+   
    The project aims to provide insights into user behavior at each stage of the payment funnel. 
-   Utilizing analytics techniques, such as tracking event identification and distribution analysis, the project seeks to uncover patterns and anomalies, facilitating data-driven decision-making. 
+   
+   Utilizing analytics techniques, such as tracking status identification and distribution analysis, the project seeks to uncover patterns and anomalies, facilitating data-driven decision-making. 
    Recommendations based on these findings will aid in optimizing the payment process, ultimately improving user experience and increasing conversion rates.
   
