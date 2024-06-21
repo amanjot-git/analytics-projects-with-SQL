@@ -1,4 +1,4 @@
-# RealWorldDataChallenges
+# Practical SQL Data Challenges
 Solving Real World Data Problems with SQL
 
 **1. [Analyzing Registered User Data](https://github.com/amanjot-git/RealWorldDataChallenges/blob/main/ProductAnalytics_SQL_CTE_DescriptiveStatistics.txt)**
